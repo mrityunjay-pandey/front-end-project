@@ -109,21 +109,90 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Recommendations dots functionality
+    // Recommendations carousel functionality
+    const recommendationsTrack = document.querySelector('.recommendations-track');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
     const dots = document.querySelectorAll('.dot');
     
+    let currentSlide = 0;
+    let totalSlides = 2; // Default: 2 sets of 3 cards each
+    
+    // Update total slides based on screen size
+    function updateTotalSlides() {
+        if (window.innerWidth <= 480) {
+            totalSlides = 6; // 6 slides on mobile (1 card each)
+        } else if (window.innerWidth <= 768) {
+            totalSlides = 3; // 3 slides on tablets (2 cards each)
+        } else {
+            totalSlides = 2; // 2 slides on desktop (3 cards each)
+        }
+        
+        // Update dots visibility
+        updateDotsVisibility();
+        
+        // Reset to first slide if current slide is out of bounds
+        if (currentSlide >= totalSlides) {
+            currentSlide = 0;
+        }
+        
+        updateCarousel();
+    }
+    
+    // Update dots visibility based on total slides
+    function updateDotsVisibility() {
+        dots.forEach((dot, index) => {
+            dot.style.display = index < totalSlides ? 'block' : 'none';
+        });
+    }
+    
+    function updateCarousel() {
+        const slideWidth = 100 / totalSlides;
+        recommendationsTrack.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
+        
+        // Update dots
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentSlide);
+        });
+        
+        // Update button states
+        prevBtn.disabled = currentSlide === 0;
+        nextBtn.disabled = currentSlide === totalSlides - 1;
+    }
+    
+    // Previous button
+    if (prevBtn) {
+        prevBtn.addEventListener('click', function() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateCarousel();
+            }
+        });
+    }
+    
+    // Next button
+    if (nextBtn) {
+        nextBtn.addEventListener('click', function() {
+            if (currentSlide < totalSlides - 1) {
+                currentSlide++;
+                updateCarousel();
+            }
+        });
+    }
+    
+    // Dots navigation
     dots.forEach((dot, index) => {
         dot.addEventListener('click', function() {
-            // Remove active class from all dots
-            dots.forEach(d => d.classList.remove('active'));
-            
-            // Add active class to clicked dot
-            this.classList.add('active');
-            
-            // Here you could add carousel functionality
-            // For now, just highlight the dot
+            currentSlide = index;
+            updateCarousel();
         });
     });
+    
+    // Initialize carousel
+    updateTotalSlides();
+    
+    // Update on window resize
+    window.addEventListener('resize', updateTotalSlides);
 
     // Project cards hover effect enhancement
     const projectCards = document.querySelectorAll('.project-card');
@@ -311,3 +380,4 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(typeWriter, 500);
     }
 });
+
