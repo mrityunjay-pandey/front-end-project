@@ -12,13 +12,15 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <div class="logo-circles">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                </div>
+                <img src="/sudhanshu_project/images/logo.png" alt="Logo" class="header-logo-img">
             </div>
             <nav class="nav">
-                <ul class="nav-list">
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list" id="nav-list">
                     <li><a href="#home" class="nav-link active">Home</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
                     <li><a href="#education" class="nav-link">Education</a></li>
@@ -41,7 +43,7 @@
                         <span class="developer">Developer</span>
                     </h2>
                     <p class="hero-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                     <button class="hire-btn">
                         HIRE ME
@@ -49,8 +51,18 @@
                     </button>
                 </div>
                 <div class="hero-image">
-                    <img src="images/hero.png" alt="Hero Illustration" class="hero-img">
+                    <img src="/sudhanshu_project/images/hero_section.jpg" alt="Hero Illustration" class="hero-img">
                 </div>
+            </div>
+            
+            <!-- Decorative Shapes -->
+            <div class="hero-shapes">
+                <img src="/sudhanshu_project/images/hero/yellow_ellipse.png" alt="" class="shape shape-1">
+                <img src="/sudhanshu_project/images/hero/yellow_ellipse.png" alt="" class="shape shape-6">
+                <img src="/sudhanshu_project/images/hero/green_ellipse.png" alt="" class="shape shape-2">
+                <img src="/sudhanshu_project/images/hero/rectangle_blue.png" alt="" class="shape shape-3">
+                <img src="/sudhanshu_project/images/hero/rectangle_yellow.png" alt="" class="shape shape-4">
+                <img src="/sudhanshu_project/images/hero/triangle.png" alt="" class="shape shape-5">
             </div>
         </div>
     </section>
@@ -67,7 +79,7 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/project.jpg" alt="Project Image">
+                        <img src="/sudhanshu_project/images/projects/project01.jpg" alt="Project Image">
                     </div>
                     <h3 class="project-title">How To Make Flyer Design</h3>
                     <p class="project-description">
@@ -84,7 +96,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/coding01.avif" alt="Project Image">
+                        <img src="/sudhanshu_project/images/projects/project02.jpg" alt="Project Image">
                     </div>
                     <h3 class="project-title">How To Make Flyer Design</h3>
                     <p class="project-description">
@@ -101,7 +113,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/coding01.jpeg" alt="Project Image">
+                        <img src="/sudhanshu_project/images/projects/project03.jpg" alt="Project Image">
                     </div>
                     <h3 class="project-title">How To Make Flyer Design</h3>
                     <p class="project-description">
@@ -118,7 +130,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/coding02.jpeg" alt="Project Image">
+                        <img src="/sudhanshu_project/images/projects/project04.jpg" alt="Project Image">
                     </div>
                     <h3 class="project-title">How To Make Flyer Design</h3>
                     <p class="project-description">
@@ -135,7 +147,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/coding03.jpg" alt="Project Image">
+                        <img src="/sudhanshu_project/images/projects/project05.jpg" alt="Project Image">
                     </div>
                     <h3 class="project-title">How To Make Flyer Design</h3>
                     <p class="project-description">
@@ -152,7 +164,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/coding06.jpeg" alt="Project Image">
+                        <img src="/sudhanshu_project/images/projects/projects06.jpg" alt="Project Image">
                     </div>
                     <h3 class="project-title">How To Make Flyer Design</h3>
                     <p class="project-description">
@@ -196,7 +208,7 @@
                         </p>
                         <div class="recommendation-author">
                             <div class="author-avatar">
-                                <img src="images/profile.jpg" alt="James Gouse" class="avatar-img">
+                                <img src="/sudhanshu_project/images/recommendation_profile_3.jpg" alt="James Gouse" class="avatar-img">
                             </div>
                             <div class="author-info">
                                 <h4 class="author-name">James Gouse</h4>
@@ -218,7 +230,7 @@
                         </p>
                         <div class="recommendation-author">
                             <div class="author-avatar">
-                                <img src="images/profile.jpg" alt="Tiana Philips" class="avatar-img">
+                                <img src="/sudhanshu_project/images/recommendation_profile.jpg" alt="Tiana Philips" class="avatar-img">
                             </div>
                             <div class="author-info">
                                 <h4 class="author-name">Tiana Philips</h4>
@@ -240,7 +252,139 @@
                         </p>
                         <div class="recommendation-author">
                             <div class="author-avatar">
-                                <img src="images/profile.jpg" alt="Talan Westervelt" class="avatar-img">
+                                <img src="/sudhanshu_project/images/recommendation_profile_2.jpg" alt="Talan Westervelt" class="avatar-img">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Talan Westervelt</h4>
+                                <p class="author-title">Business Man</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="recommendation-title">Great Quality!</h3>
+                        <p class="recommendation-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....
+                        </p>
+                        <div class="recommendation-author">
+                            <div class="author-avatar">
+                                <img src="/sudhanshu_project/images/recommendation_profile_3.jpg" alt="James Gouse" class="avatar-img">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">James Gouse</h4>
+                                <p class="author-title">Graphic Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="recommendation-title">Amazing Work!</h3>
+                        <p class="recommendation-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....
+                        </p>
+                        <div class="recommendation-author">
+                            <div class="author-avatar">
+                                <img src="/sudhanshu_project/images/recommendation_profile.jpg" alt="Tiana Philips" class="avatar-img">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Tiana Philips</h4>
+                                <p class="author-title">Photographer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="recommendation-title">Excellent Service!</h3>
+                        <p class="recommendation-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....
+                        </p>
+                        <div class="recommendation-author">
+                            <div class="author-avatar">
+                                <img src="/sudhanshu_project/images/recommendation_profile_2.jpg" alt="Talan Westervelt" class="avatar-img">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Talan Westervelt</h4>
+                                <p class="author-title">Business Man</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="recommendation-title">Great Quality!</h3>
+                        <p class="recommendation-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....
+                        </p>
+                        <div class="recommendation-author">
+                            <div class="author-avatar">
+                                <img src="/sudhanshu_project/images/recommendation_profile_3.jpg" alt="James Gouse" class="avatar-img">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">James Gouse</h4>
+                                <p class="author-title">Graphic Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="recommendation-title">Amazing Work!</h3>
+                        <p class="recommendation-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....
+                        </p>
+                        <div class="recommendation-author">
+                            <div class="author-avatar">
+                                <img src="/sudhanshu_project/images/recommendation_profile.jpg" alt="Tiana Philips" class="avatar-img">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Tiana Philips</h4>
+                                <p class="author-title">Photographer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="recommendation-title">Excellent Service!</h3>
+                        <p class="recommendation-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....
+                        </p>
+                        <div class="recommendation-author">
+                            <div class="author-avatar">
+                                <img src="/sudhanshu_project/images/recommendation_profile_2.jpg" alt="Talan Westervelt" class="avatar-img">
                             </div>
                             <div class="author-info">
                                 <h4 class="author-name">Talan Westervelt</h4>
@@ -262,7 +406,7 @@
                         </p>
                         <div class="recommendation-author">
                             <div class="author-avatar">
-                                <img src="images/profile.jpg" alt="Sarah Johnson" class="avatar-img">
+                                <img src="/sudhanshu_project/images/footer_left/recommendation_profile.jpg" alt="Sarah Johnson" class="avatar-img">
                             </div>
                             <div class="author-info">
                                 <h4 class="author-name">Sarah Johnson</h4>
@@ -284,7 +428,7 @@
                         </p>
                         <div class="recommendation-author">
                             <div class="author-avatar">
-                                <img src="images/profile.jpg" alt="Mike Chen" class="avatar-img">
+                                <img src="/sudhanshu_project/images/recommendation_profile_2.jpg" alt="Mike Chen" class="avatar-img">
                             </div>
                             <div class="author-info">
                                 <h4 class="author-name">Mike Chen</h4>
@@ -306,7 +450,7 @@
                         </p>
                         <div class="recommendation-author">
                             <div class="author-avatar">
-                                <img src="images/profile.jpg" alt="Emma Davis" class="avatar-img">
+                                <img src="/sudhanshu_project/images/footer_left/recommendation_profile_3.jpg" alt="Emma Davis" class="avatar-img">
                             </div>
                             <div class="author-info">
                                 <h4 class="author-name">Emma Davis</h4>
@@ -314,23 +458,23 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
             <div class="recommendations-controls">
-                <button class="carousel-btn prev-btn">
+                <!-- <button class="carousel-btn prev-btn">
                     <i class="fas fa-chevron-left"></i>
-                </button>
+                </button> -->
                 <div class="recommendations-dots">
                     <span class="dot active" data-slide="0"></span>
                     <span class="dot" data-slide="1"></span>
                     <span class="dot" data-slide="2"></span>
                     <span class="dot" data-slide="3"></span>
                     <span class="dot" data-slide="4"></span>
-                    <span class="dot" data-slide="5"></span>
                 </div>
-                <button class="carousel-btn next-btn">
+                <!-- <button class="carousel-btn next-btn">
                     <i class="fas fa-chevron-right"></i>
-                </button>
+                </button> -->
             </div>
         </div>
     </section>
@@ -366,7 +510,7 @@
                     <div class="contact-cards">
                         <div class="contact-card">
                             <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
+                                <img src="/sudhanshu_project/images/location.png" alt="location" class="contact-icon-img">
                             </div>
                             <div class="contact-details">
                                 <p><strong>Country:</strong> Bangladesh</p>
@@ -376,7 +520,7 @@
                         </div>
                         <div class="contact-card">
                             <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
+                                <img src="/sudhanshu_project/images/mail.png" alt="Email" class="contact-icon-img">
                             </div>
                             <div class="contact-details">
                                 <p><strong>Email:</strong> Youremail@Gmail.Com</p>
@@ -386,7 +530,7 @@
                         </div>
                         <div class="contact-card">
                             <div class="contact-icon">
-                                <i class="fas fa-info-circle"></i>
+                                <img src="/sudhanshu_project/images/Mobile.png" alt="Phone" class="contact-icon-img">
                             </div>
                             <div class="contact-details">
                                 <p><strong>Support Services:</strong> 15369</p>
@@ -403,65 +547,54 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <!-- Contact Action Section -->
-            <!-- <div class="contact-action">
-                <div class="send-message-section">
-                    <button class="send-btn-large">SEND MESSAGE</button>
-                </div>
-                <div class="contact-info-section">
-                    <p class="contact-info-text">Office: +58 (021)356 587 235</p>
-                    <p class="contact-info-text">Personal: +58 (021)356 587 235</p>
-                </div>
-            </div> -->
-
             <!-- Company Logos Section -->
             <div class="company-logos-section">
                 <div class="company-logos">
                     <div class="company-logo">
-                        <span class="logo-text">3</span>
-                        <p>3 eerrate</p>
+                        <img src="/sudhanshu_project/images/3_errate.png" alt="3 Generate" class="company-logo-img">
+                        <!-- <p>3 Generate</p> -->
                     </div>
                     <div class="company-logo">
-                        <span class="logo-text golden">GL</span>
+                        <img src="/sudhanshu_project/images/gl.png" alt="GL" class="company-logo-img">
                         <p></p>
                     </div>
                     <div class="company-logo">
-                        <span class="logo-text">B</span>
-                        <p>Genrate</p>
+                        <img src="/sudhanshu_project/images/b.png" alt="B Generate" class="company-logo-img">
+                        <!-- <p>B Generate</p> -->
                     </div>
                     <div class="company-logo">
-                        <span class="logo-text yellow">3</span>
-                        <p>Generate</p>
+                        <img src="/sudhanshu_project/images/3_generate.png" alt="Generate" class="company-logo-img">
+                        <!-- <p>Generate</p> -->
                     </div>
                 </div>
             </div>
 
+            <div class="footer-logo">
+                <img src="/sudhanshu_project/images/logo.png" alt="Logo" class="footer-logo-img">
+            </div>
             <!-- Footer Content -->
             <div class="footer-content">
                 <div class="footer-section">
-                    <div class="footer-logo">
-                        <div class="logo-circles">
-                            <div class="circle"></div>
-                            <div class="circle"></div>
-                        </div>
-                    </div>
                     <div class="rating-cards">
                         <div class="rating-card">
                             <div class="rating-logo blue">
-                                <i class="fas fa-file-alt"></i>
+                                <img src="/sudhanshu_project/images/footer_left/footer_left_top.jpg" alt="Rating" class="rating-img">
                             </div>
+                            <!-- <p class="rating-label">Rating</p> -->
                             <p>4.5/5 Rating On Lorem</p>
                         </div>
                         <div class="rating-card">
                             <div class="rating-logo blue-dark">
-                                <span>n</span>
+                                <img src="/sudhanshu_project/images/n.jpg" alt="Rating" class="rating-img">
                             </div>
+                            <!-- <p class="rating-label">Rating</p> -->
                             <p>9/10 Rating On Ipsum</p>
                         </div>
                         <div class="rating-card">
                             <div class="rating-logo green">
-                                <i class="fas fa-play"></i>
+                                <img src="/sudhanshu_project/images/footer_left/footer_left_bottom.jpg" alt="Rating" class="rating-img">
                             </div>
+                            <!-- <p class="rating-label">Rating</p> -->
                             <p>4.5/5 Rating On Dorel</p>
                         </div>
                     </div>
@@ -493,21 +626,21 @@
                             <div class="social-links">
                                 <a href="#" class="social-link linkedin">
                                     <div class="social-icon">
-                                        <i class="fab fa-linkedin"></i>
+                                        <img src="/sudhanshu_project/images/footer_right/LinkedIn.png" alt="LinkedIn" class="social-img">
                                     </div>
-                                    <span class="social-text">LinkedIn</span>
+                                    <!-- <span class="social-text">LinkedIn</span> -->
                                 </a>
                                 <a href="#" class="social-link instagram">
                                     <div class="social-icon">
-                                        <i class="fab fa-instagram"></i>
+                                        <img src="/sudhanshu_project/images/footer_right/Instagram.png" alt="Instagram" class="social-img">
                                     </div>
-                                    <span class="social-text">Instagram</span>
+                                    <!-- <span class="social-text">Instagram</span> -->
                                 </a>
                                 <a href="#" class="social-link facebook">
                                     <div class="social-icon">
-                                        <i class="fab fa-facebook"></i>
+                                        <img src="/sudhanshu_project/images/footer_right/Facebook.png" alt="Instagram" class="social-img">
                                     </div>
-                                    <span class="social-text">facebook</span>
+                                    <!-- <span class="social-text">facebook</span> -->
                                 </a>
                             </div>
                         </div>

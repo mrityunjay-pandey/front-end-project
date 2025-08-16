@@ -125,10 +125,10 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (window.innerWidth <= 768) {
             totalSlides = 3; // 3 slides on tablets (2 cards each)
         } else {
-            totalSlides = 2; // 2 slides on desktop (3 cards each)
+            totalSlides = 4; // 4 slides on desktop (3 cards each)
         }
         
-        // Update dots visibility
+        // Always show 5 dots
         updateDotsVisibility();
         
         // Reset to first slide if current slide is out of bounds
@@ -139,10 +139,11 @@ document.addEventListener('DOMContentLoaded', function() {
         updateCarousel();
     }
     
-    // Update dots visibility based on total slides
+    // Update dots visibility - always show 5 dots
     function updateDotsVisibility() {
         dots.forEach((dot, index) => {
-            dot.style.display = index < totalSlides ? 'block' : 'none';
+            // Always show the first 5 dots
+            dot.style.display = index < 5 ? 'block' : 'none';
         });
     }
     
@@ -340,6 +341,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize mobile menu
     createMobileMenu();
+    
+    // Hamburger menu functionality
+    const hamburger = document.getElementById('hamburger');
+    const navList = document.getElementById('nav-list');
+    
+    if (hamburger && navList) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navList.classList.toggle('active');
+        });
+        
+        // Close menu when clicking on a nav link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navList.classList.remove('active');
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!hamburger.contains(e.target) && !navList.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navList.classList.remove('active');
+            }
+        });
+    }
 
     // Add loading animation
     window.addEventListener('load', function() {
