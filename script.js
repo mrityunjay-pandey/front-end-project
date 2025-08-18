@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function updateCarousel() {
-        const slideWidth = 100 / totalSlides;
+        const slideWidth = (100 / (totalSlides-2.05))/2;
         recommendationsTrack.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
         
         // Update dots

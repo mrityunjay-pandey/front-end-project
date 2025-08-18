@@ -250,6 +250,14 @@ body {
     height: 15px;
 }
 
+.shape-7 {
+    /* Green ellipse - above character's raised arm */
+    top: 95%;
+    right: 86%;
+    width: 25px;
+    height: 25px;
+}
+
 /* Section Styles */
 .section-header {
     text-align: center;
@@ -321,6 +329,7 @@ body {
     color: #666;
     margin: 0 20px 20px;
     line-height: 1.6;
+    font-size: 0.9rem;
 }
 
 .project-tags {
@@ -372,14 +381,7 @@ body {
     margin-right: 30px;
     flex-shrink: 0;
     box-sizing: border-box;
-}
-
-.recommendation-card:nth-child(3n) {
-    margin-right: 0; /* Remove margin from every 3rd card */
-}
-
-.recommendation-card:nth-child(6n) {
-    margin-right: 0; /* Remove margin from every 6th card (end of second slide) */
+    font-size: 1.02rem;
 }
 
 .stars {
@@ -939,6 +941,8 @@ body {
         width: 25px;
         height: 25px;
     }
+
+    
     
     .projects-grid {
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
